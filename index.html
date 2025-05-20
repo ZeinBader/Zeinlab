@@ -1,71 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Lab Name</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Epitranscriptomic Research Lab</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Your Lab Name</h1>
-        <p>Institution / Department</p>
-    </header>
-
-    <section id="home">
-        <h2>Welcome</h2>
-        <p>Brief introduction to your lab’s goals and focus areas.</p>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Introduce lab members, PI, and research vision.</p>
-    </section>
-
-    <section id="research">
-        <h2>Research</h2>
-        <article>
-            <h3>Project 1 Title</h3>
-            <p>Short description.</p>
-        </article>
-        <article>
-            <h3>Project 2 Title</h3>
-            <p>Short description.</p>
-        </article>
-        <!-- Add more projects as needed -->
-    </section>
-
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li><a href="#">Paper Title, Journal, Year</a></li>
-            <li><a href="#">Paper Title, Journal, Year</a></li>
-            <!-- Add more publications -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Plant Epitranscriptomic Research Lab</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
+      </nav>
+    </div>
+  </header>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Lab address, email, phone.</p>
-        <form action="mailto:your.email@institution.edu" method="post" enctype="text/plain">
-            <label>Name:<br><input type="text" name="name"></label><br>
-            <label>Email:<br><input type="email" name="email"></label><br>
-            <label>Message:<br><textarea name="message" rows="5"></textarea></label><br>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+  <section id="hero">
+    <div class="container hero-content">
+      <h2>Deciphering RNA Modifications in Plants</h2>
+      <p>Integrating epitranscriptomic maps with functional genomics to uncover regulatory mechanisms under stress and development.</p>
+      <a href="#research" class="btn-primary">Explore Our Work</a>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Your Lab Name. All rights reserved.</p>
-    </footer>
+  <section id="about" class="container section">
+    <h2>About Us</h2>
+    <p>We are a multidisciplinary team at the forefront of plant epitranscriptomics. Our mission is to map and functionally characterize RNA modifications—such as m<sup>6</sup>A, pseudouridine, and 5mC—across model and crop species, leveraging cutting-edge sequencing and computational pipelines.</p>
+  </section>
+
+  <section id="research" class="container section">
+    <h2>Research Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Epitranscriptome Mapping</h3>
+        <p>Genome-wide profiling of m<sup>6</sup>A and pseudouridine in rice and Arabidopsis under abiotic stress.</p>
+      </div>
+      <div class="card">
+        <h3>Functional Validation</h3>
+        <p>CRISPR-based editing of writer/eraser enzymes to dissect roles in development and stress responses.</p>
+      </div>
+      <div class="card">
+        <h3>Computational Pipelines</h3>
+        <p>Integrated workflows for direct RNA sequencing analysis and epitranscriptomic data visualization.</p>
+      </div>
+      <div class="card">
+        <h3>Translational Applications</h3>
+        <p>Engineering stress-resilient crops by targeting epitranscriptomic regulators.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="container section">
+    <h2>Selected Publications</h2>
+    <ul class="publications">
+      <li><strong>Bader Z.E.</strong> et al. (2024) Mapping m<sup>6</sup>A dynamics in rice anthers under heat stress. <em>Plant Cell</em>.</li>
+      <li><strong>Bader Z.E.</strong> &amp; Yun D.-J. (2023) Pseudouridine profiling reveals novel regulatory networks in Arabidopsis. <em>Nucleic Acids Res.</em>.</li>
+      <li><strong>Bader Z.E.</strong> et al. (2022) Epitranscriptomic regulation of ABA signaling via RNA methylation. <em>Mol. Plant</em>.</li>
+    </ul>
+    <p><a href="https://scholar.google.co.uk/citations?user=DT_hhNIAAAAJ&hl=en" target="_blank" class="btn-secondary">View All Publications</a></p>
+  </section>
+
+  <section id="team" class="container section">
+    <h2>Our Team</h2>
+    <p>Led by Prof. Zein Bader, our lab combines molecular biology, bioinformatics, and genomics. We collaborate across RIKEN and international institutes to advance plant epitranscriptomics.</p>
+  </section>
+
+  <section id="contact" class="container section">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:zein.bader@institution.edu">zein.bader@institution.edu</a></p>
+    <form action="mailto:zein.bader@institution.edu" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Plant Epitranscriptomic Research Lab | <a href="https://scholar.google.co.uk/citations?user=DT_hhNIAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+    </div>
+  </footer>
 </body>
 </html>
